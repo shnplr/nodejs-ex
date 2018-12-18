@@ -200,7 +200,7 @@ Note that the url for our new Mongo instance, for our example, is `172.30.0.112:
 
 #### Setting environment variables
 
-To take a look at environment variables set for each pod, run `oc env pods --all --list`.
+To take a look at environment variables set for each pod, run `oc set env pods --all --list`.
 
 We need to add the environment variable `MONGO_URL` to our Node.js web app so that it will utilize our MongoDB, and enable the "Page view count" feature. Run:
 
